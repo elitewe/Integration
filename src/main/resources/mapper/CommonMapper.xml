@@ -62,4 +62,34 @@
         <result column="diluted_eps" property="dilutedEps"></result>
         <result column="diluted_roe" property="dilutedRoe"></result>
     </resultMap>
+
+    <resultMap id="Monthly" type="com.ztx.shares.pojo.Monthly">
+        <result column="id" property="id"></result>
+        <result column="ts_code" property="tsCode"></result>
+        <result column="trade_date" property="tradeDate"></result>
+        <result column="open" property="open"></result>
+        <result column="high" property="high"></result>
+        <result column="low" property="low"></result>
+        <result column="close" property="close"></result>
+        <result column="pre_close" property="preClose"></result>
+        <result column="change" property="change"></result>
+        <result column="pct_chg" property="pctChg"></result>
+        <result column="vol" property="vol"></result>
+        <result column="amount" property="amount"></result>
+    </resultMap>
+
+    <resultMap id="Weekly" type="com.ztx.shares.pojo.Weekly">
+        <result column="id" property="id"></result>
+        <result column="ts_code" property="tsCode"></result>
+        <result column="trade_date" property="tradeDate"></result>
+        <result column="open" property="open"></result>
+        <result column="high" property="high"></result>
+        <result column="low" property="low"></result>
+        <result column="close" property="close"></result>
+        <result column="pre_close" property="preClose"></result>
+        <result column="change" property="change"></result>
+        <result column="pct_chg" property="pctChg"></result>
+        <result column="vol" property="vol"></result>
+        <result column="amount" property="amount"></result>
+    </resultMap>
 </mapper>

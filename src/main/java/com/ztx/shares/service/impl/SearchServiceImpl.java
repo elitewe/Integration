@@ -114,4 +114,18 @@ public class SearchServiceImpl implements SearchService {
         Result result = new Result(true, new Analysis(code,pctChg,up,down,profit,profitRate,recommend));
         return result;
     }
+
+    @Override
+    public Result selectWeeklyByCode(String code) {
+        List<Weekly> weekly = searchMapper.selectWeeklyByCode(code);
+        Result result = new Result(true, weekly);
+        return result;
+    }
+
+    @Override
+    public Result selectMonthlyByCode(String code) {
+        List<Monthly> monthly = searchMapper.selectMonthlyByCode(code);
+        Result result = new Result(true, monthly);
+        return result;
+    }
 }

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fb98449-2f82-48ff-bfa0-3a5cbd20f899" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/apidocs/V1.0/apidoc.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ztx/shares/InitDoc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ztx/shares/InitDoc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ztx/shares/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ztx/shares/controller/SearchController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ztx/shares/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ztx/shares/controller/TestController.java" afterDir="false" />
@@ -47,8 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ztx/shares/mapper/SearchMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+            <state relative-caret-position="348">
+              <caret line="45" column="11" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SearchMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="76" column="4" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="4" />
+            <state relative-caret-position="387">
+              <caret line="95" column="22" selection-start-line="95" selection-start-column="22" selection-end-line="95" selection-end-column="22" />
               <folding>
                 <element signature="e#1461#1465#0" expanded="true" />
               </folding>
@@ -68,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ztx/shares/controller/SearchController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="157" column="37" selection-start-line="157" selection-start-column="37" selection-end-line="157" selection-end-column="37" />
+            <state relative-caret-position="-2877">
+              <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#521#522#0" expanded="true" />
@@ -81,25 +82,56 @@
                 <element signature="e#1236#1237#0" expanded="true" />
                 <element signature="e#1661#1662#0" expanded="true" />
                 <element signature="e#1723#1724#0" expanded="true" />
+                <element signature="e#4111#4112#0" expanded="true" />
+                <element signature="e#4132#4133#0" expanded="true" />
+                <element signature="e#4279#4280#0" expanded="true" />
+                <element signature="e#4339#4340#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ztx/shares/mapper/StockMapper.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ztx/shares/pojo/Weekly.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+            <state relative-caret-position="418">
+              <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/StockMapper.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ztx/shares/pojo/Monthly.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="113" column="10" lean-forward="true" selection-start-line="113" selection-start-column="10" selection-end-line="113" selection-end-column="10" />
+            <state relative-caret-position="418">
+              <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CommonMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="80" column="57" selection-start-line="80" selection-start-column="57" selection-end-line="80" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ztx/shares/service/SearchService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="33" column="31" lean-forward="true" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,22 +149,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ztx/shares/service/SearchService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ztx/shares/service/impl/SearchServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="106" column="44" lean-forward="true" selection-start-line="106" selection-start-column="44" selection-end-line="106" selection-end-column="44" />
+            <state relative-caret-position="257">
+              <caret line="121" column="22" lean-forward="true" selection-start-line="121" selection-start-column="22" selection-end-line="121" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -148,15 +168,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ztx/shares/config/JobDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="28" column="51" lean-forward="true" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -216,24 +227,26 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ztx/shares/pojo/Company.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ztx/shares/pojo/MStock.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ztx/shares/pojo/Express.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/CommonMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ztx/shares/pojo/Result.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ztx/shares/service/SearchService.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ztx/shares/InitDoc.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ztx/shares/InitDoc.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ztx/shares/controller/AllController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ztx/shares/controller/TestController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ztx/shares/mapper/SearchMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ztx/shares/mapper/CommonMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ztx/shares/controller/ViewController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ztx/shares/controller/SearchController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/SearchMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/StockInfoMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ztx/shares/pojo/Analysis.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/StockMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztx/shares/pojo/Weekly.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztx/shares/pojo/Monthly.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/CommonMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztx/shares/mapper/SearchMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/SearchMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ztx/shares/service/impl/SearchServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztx/shares/service/SearchService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztx/shares/controller/SearchController.java" />
       </list>
     </option>
   </component>
@@ -267,10 +280,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="17" />
-    <option name="y" value="27" />
-    <option name="width" value="980" />
-    <option name="height" value="879" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="978" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -287,17 +300,6 @@
             <path>
               <item name="shares" type="b2602c69:ProjectViewProjectNode" />
               <item name="StockSpark" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shares" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StockSpark" type="462c0819:PsiDirectoryNode" />
-              <item name="apidocs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shares" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StockSpark" type="462c0819:PsiDirectoryNode" />
-              <item name="apidocs" type="462c0819:PsiDirectoryNode" />
-              <item name="V1.0" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shares" type="b2602c69:ProjectViewProjectNode" />
@@ -433,11 +435,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="shares" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="shares" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StockSpark" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -452,7 +449,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1593699140129" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1593700851280" />
     <property name="last_opened_file_path" value="D:/新建文件夹/大三/三下/物联网/connection" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -550,7 +547,7 @@
       <workItem from="1593231507161" duration="369000" />
       <workItem from="1593232040484" duration="12405000" />
       <workItem from="1593331246316" duration="23683000" />
-      <workItem from="1593693171296" duration="1810000" />
+      <workItem from="1593693171296" duration="3448000" />
     </task>
     <servers />
   </component>
@@ -581,13 +578,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40944000" />
+    <option name="totallyTimeSpent" value="42582000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2660858" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21648793" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -598,7 +594,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32982457" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.12464589" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35977337" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.43201134" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -697,23 +693,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztx/shares/pojo/StockInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztx/shares/pojo/Express.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ztx/shares/service/JsoupService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -971,13 +950,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CommonMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="62" column="57" selection-start-line="62" selection-start-column="57" selection-end-line="62" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/StockInfoMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -993,32 +965,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztx/shares/controller/SearchController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="157" column="37" selection-start-line="157" selection-start-column="37" selection-end-line="157" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#1181#1182#0" expanded="true" />
-            <element signature="e#1236#1237#0" expanded="true" />
-            <element signature="e#1661#1662#0" expanded="true" />
-            <element signature="e#1723#1724#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztx/shares/service/SearchService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1066,32 +1012,89 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztx/shares/pojo/Weekly.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztx/shares/pojo/Monthly.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CommonMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="80" column="57" selection-start-line="80" selection-start-column="57" selection-end-line="80" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SearchMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="76" column="4" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="4" />
+        <state relative-caret-position="387">
+          <caret line="95" column="22" selection-start-line="95" selection-start-column="22" selection-end-line="95" selection-end-column="22" />
           <folding>
             <element signature="e#1461#1465#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztx/shares/mapper/SearchMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztx/shares/service/impl/SearchServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+        <state relative-caret-position="257">
+          <caret line="121" column="22" lean-forward="true" selection-start-line="121" selection-start-column="22" selection-end-line="121" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztx/shares/service/impl/SearchServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztx/shares/service/SearchService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="106" column="44" lean-forward="true" selection-start-line="106" selection-start-column="44" selection-end-line="106" selection-end-column="44" />
+        <state relative-caret-position="350">
+          <caret line="33" column="31" lean-forward="true" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztx/shares/mapper/SearchMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="45" column="11" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztx/shares/controller/SearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2877">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#1181#1182#0" expanded="true" />
+            <element signature="e#1236#1237#0" expanded="true" />
+            <element signature="e#1661#1662#0" expanded="true" />
+            <element signature="e#1723#1724#0" expanded="true" />
+            <element signature="e#4111#4112#0" expanded="true" />
+            <element signature="e#4132#4133#0" expanded="true" />
+            <element signature="e#4279#4280#0" expanded="true" />
+            <element signature="e#4339#4340#0" expanded="true" />
           </folding>
         </state>
       </provider>
