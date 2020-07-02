@@ -29,3 +29,7 @@ build/
 
 ### VS Code ###
 .vscode/
+.idea/codeStyles/Project.xml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/workspace.xml
