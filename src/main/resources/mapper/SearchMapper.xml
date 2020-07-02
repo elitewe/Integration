@@ -11,7 +11,7 @@
     </select>
     
     <select id="selectCompanyByCode" resultMap="com.ztx.shares.mapper.CommonMapper.Company">
-        select * from stock_company where code = #{code};
+        select * from stock_company where ts_code = #{code};
     </select>
 
     <select id="selectAllExpress" resultMap="com.ztx.shares.mapper.CommonMapper.Express">

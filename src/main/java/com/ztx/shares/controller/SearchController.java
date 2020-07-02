@@ -114,7 +114,7 @@ public class SearchController {
      * @param endDay 结束日期
      * @return
      */
-    @GetMapping("/daily/between3/")
+    @GetMapping("/daily/between3")
     public Result selectDailyByCodeBetweenDate(@RequestParam("code") String code, @RequestParam("startDay") String startDay, @RequestParam("endDay") String endDay) {
         return searchService.selectDailyByCodeBetweenDate(code, startDay, endDay);
     }
@@ -154,17 +154,17 @@ public class SearchController {
      * @param code 股票代码（例如：000001.sz）
      * @return
      */
-    @GetMapping("/stock/recommend/{code}")
+    @GetMapping("/recommend/{code}")
     public Result getAnalysis(@PathVariable String code) {
         return searchService.getAnalysis(code);
     }
 
-    @GetMapping("/stock/weekly/{code}")
+    @GetMapping("/weekly/{code}")
     public Result selectWeeklyByCode(@PathVariable String code) {
         return searchService.selectWeeklyByCode(code);
     }
 
-    @GetMapping("/stock/monthly/{code}")
+    @GetMapping("/monthly/{code}")
     public Result selectMonthByCode(@PathVariable String code) {
         return searchService.selectMonthlyByCode(code);
     }
