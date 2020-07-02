@@ -35,4 +35,11 @@ public interface StockInfoMapper {
      * @return
      */
     List<Map<String,Object>> selectIncrease(@Param("val")int val,@Param("openTime")String openTime,@Param("endTime")String endTime);
+
+    /**
+     * 获取某股票半年内总涨跌幅
+     * @param stockId
+     * @return
+     */
+    List<Map<String,Object>> getPctChgById(@Param("stockId") String stockId);
 }

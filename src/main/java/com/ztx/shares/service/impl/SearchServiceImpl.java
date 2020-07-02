@@ -102,4 +102,16 @@ public class SearchServiceImpl implements SearchService {
         Result result = new Result(true, stock);
         return result;
     }
+
+    @Override
+    public Result getAnalysis(String code) {
+        Double pctChg = searchMapper.getPctChgById(code);
+        int up=searchMapper.getUpById(code);
+        int down=searchMapper.getDownById(code);
+        Double profit=searchMapper.getProfitById(code)/100000000;
+        Double profitRate=searchMapper.getProfitRateById(code) / 100;
+        Double recommend=(pctChg*100+up*1.0/(up+down)*100+profitRate*100+200)/5;
+        Result result = new Result(true, new Analysis(code,pctChg,up,down,profit,profitRate,recommend));
+        return result;
+    }
 }

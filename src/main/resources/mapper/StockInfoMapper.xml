@@ -62,6 +62,24 @@
     from stockinfo
     where id = #{id,jdbcType=INTEGER}
   </select>
+
+  <select id="getPctChgById" resultType="java.util.Map">
+      select
+      (
+        ((select close from daily where ts_code='000001.SZ' and
+        trade_date=(select max(trade_date) from daily where ts_code='000001.SZ' and trade_date &lt; 20200701))
+        -
+        (select close from daily where ts_code='000001.SZ' and
+        trade_date=(select min(trade_date) from daily where ts_code='000001.SZ' and trade_date > 20200101)))
+        /
+        (select close from daily where ts_code='000001.SZ' and
+        trade_date=(select min(trade_date) from daily where ts_code='000001.SZ' and trade_date > 20200101))
+      )
+      as pct_chg
+  </select>
+
+
+
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from stockinfo
     where id = #{id,jdbcType=INTEGER}

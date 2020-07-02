@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ztx.shares.mapper.SearchMapper">
+    
+    <select id="selectAllCompany" resultMap="com.ztx.shares.mapper.CommonMapper.Company">
+        select * from stock_company;
+    </select>
+
+    <select id="selectCompanyById" resultMap="com.ztx.shares.mapper.CommonMapper.Company">
+        select * from stock_company where id = #{id};
+    </select>
+    
+    <select id="selectCompanyByCode" resultMap="com.ztx.shares.mapper.CommonMapper.Company">
+        select * from stock_company where code = #{code};
+    </select>
+
+    <select id="selectAllExpress" resultMap="com.ztx.shares.mapper.CommonMapper.Express">
+        select * from express;
+    </select>
+
+    <select id="selectExpressById" resultMap="com.ztx.shares.mapper.CommonMapper.Express">
+        select * from express where id = #{id};
+    </select>
+
+    <select id="selectExpressByCode" resultMap="com.ztx.shares.mapper.CommonMapper.Express">
+        select * from express where ts_code = #{code};
+    </select>
+
+    <select id="selectDailyByDate" resultMap="com.ztx.shares.mapper.CommonMapper.Daily">
+        select * from daily where trade_date = #{day};
+    </select>
+
+    <select id="selectDailyBetweenDate" resultMap="com.ztx.shares.mapper.CommonMapper.Daily">
+        select * from daily whwre trade_date >= #{startDay} and trade_date &lt;= #{endDay};
+    </select>
+
+    <select id="selectDailyByCodeAndDate" resultMap="com.ztx.shares.mapper.CommonMapper.Daily">
+        select * from daily where ts_code = #{code} and trade_date = #{day};
+    </select>
+
+    <select id="selectDailyByCodeBetweenDate" resultMap="com.ztx.shares.mapper.CommonMapper.Daily">
+        select * from daily where ts_code = #{code} and trade_date >= #{startDay} and trade_date &lt;= #{endDay};
+    </select>
+
+    <select id="selectAllStock" resultMap="com.ztx.shares.mapper.CommonMapper.MStock">
+        select * from stock;
+    </select>
+    
+    <select id="selectStockById" resultMap="com.ztx.shares.mapper.CommonMapper.MStock">
+        select * from stock where id = #{id};
+    </select>
+    
+    <select id="selectStockByCode" resultMap="com.ztx.shares.mapper.CommonMapper.MStock">
+        select * from stock where ts_code = {#code};
+    </select>
+    
+</mapper>

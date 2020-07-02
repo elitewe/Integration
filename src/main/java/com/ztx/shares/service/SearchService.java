@@ -30,4 +30,6 @@ public interface SearchService {
     Result selectStockById(int id);
 
     Result selectStockByCode(String code);
+
+    Result getAnalysis(String code);
 }

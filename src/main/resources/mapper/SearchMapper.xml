@@ -31,7 +31,7 @@
     </select>
 
     <select id="selectDailyBetweenDate" resultMap="com.ztx.shares.mapper.CommonMapper.Daily">
-        select * from daily whwre trade_date >= #{startDay} and trade_date &lt;= #{endDay};
+        select * from daily where trade_date >= #{startDay} and trade_date &lt;= #{endDay};
     </select>
 
     <select id="selectDailyByCodeAndDate" resultMap="com.ztx.shares.mapper.CommonMapper.Daily">
@@ -39,7 +39,7 @@
     </select>
 
     <select id="selectDailyByCodeBetweenDate" resultMap="com.ztx.shares.mapper.CommonMapper.Daily">
-        select * from daily whwre ts_code = #{code} and trade_date >= #{startDay} and trade_date &lt;= #{endDay};
+        select * from daily where ts_code = #{code} and trade_date >= #{startDay} and trade_date &lt;= #{endDay};
     </select>
 
     <select id="selectAllStock" resultMap="com.ztx.shares.mapper.CommonMapper.MStock">
@@ -51,7 +51,41 @@
     </select>
     
     <select id="selectStockByCode" resultMap="com.ztx.shares.mapper.CommonMapper.MStock">
-        select * from stock where ts_code = {#code};
+        select * from stock where ts_code = #{code};
     </select>
-    
+
+    <select id="getPctChgById" resultType="java.lang.Double">
+        select
+        (
+        ((select close from daily where ts_code=#{code} and
+        trade_date=(select max(trade_date) from daily where ts_code=#{code} and trade_date &lt; 20200701))
+        -
+        (select close from daily where ts_code=#{code} and
+        trade_date=(select min(trade_date) from daily where ts_code=#{code} and trade_date > 20200101)))
+        /
+        (select close from daily where ts_code=#{code} and
+        trade_date=(select min(trade_date) from daily where ts_code=#{code} and trade_date > 20200101))
+        )
+        as pct_chg
+    </select>
+
+    <select id="getUpById" resultType="java.lang.Integer">
+        select count(*) from daily
+        where ts_code=#{code} and trade_date &lt; 20200701 and trade_date > 20200101 and pct_chg>=0;
+    </select>
+
+    <select id="getDownById" resultType="java.lang.Integer">
+        select count(*) from daily
+        where ts_code=#{code} and trade_date &lt; 20200701 and trade_date > 20200101 and pct_chg &lt; 0;
+    </select>
+
+    <select id="getProfitById" resultType="java.lang.Double">
+        select n_income from express
+        where ts_code=#{code} limit 1;
+    </select>
+
+    <select id="getProfitRateById" resultType="java.lang.Double">
+        select diluted_roe from express
+        where ts_code=#{code} limit 1;
+    </select>
 </mapper>

@@ -148,4 +148,13 @@ public class SearchController {
     }
 
 
+    /**
+     * 根据code获取股票推荐指数
+     * @param code 股票代码（例如：000001.sz）
+     * @return
+     */
+    @GetMapping("/stock/recommend/{code}")
+    public Result getAnalysis(@PathVariable String code) {
+        return searchService.getAnalysis(code);
+    }
 }

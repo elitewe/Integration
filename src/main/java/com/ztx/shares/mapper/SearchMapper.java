@@ -32,4 +32,14 @@ public interface SearchMapper {
     MStock selectStockById(int id);
 
     MStock selectStockByCode(String code);
+
+    Double getPctChgById(String code);
+
+    int getUpById(String code);
+
+    int getDownById(String code);
+
+    Double getProfitById(String code);
+
+    Double getProfitRateById(String code);
 }
