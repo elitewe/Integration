@@ -32,4 +32,8 @@ public interface SearchService {
     Result selectStockByCode(String code);
 
     Result getAnalysis(String code);
+
+    Result selectWeeklyByCode(String code);
+
+    Result selectMonthlyByCode(String code);
 }

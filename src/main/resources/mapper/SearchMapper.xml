@@ -88,4 +88,13 @@
         select diluted_roe from express
         where ts_code=#{code} limit 1;
     </select>
+
+    <select id="selectWeeklyByCode" resultMap="com.ztx.shares.mapper.CommonMapper.Weekly">
+        select * from weekly where ts_code = #{code};
+    </select>
+
+    <select id="selectMonthlyByCode" resultMap="com.ztx.shares.mapper.CommonMapper.Monthly">
+        select * from monthly where ts_code = #{code};
+    </select>
+
 </mapper>

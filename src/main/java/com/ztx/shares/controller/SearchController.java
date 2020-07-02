@@ -2,6 +2,7 @@ package com.ztx.shares.controller;
 
 import com.ztx.shares.pojo.Result;
 import com.ztx.shares.service.SearchService;
+//import jdk.nashorn.internal.objects.annotations.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -156,5 +157,15 @@ public class SearchController {
     @GetMapping("/stock/recommend/{code}")
     public Result getAnalysis(@PathVariable String code) {
         return searchService.getAnalysis(code);
+    }
+
+    @GetMapping("/stock/weekly/{code}")
+    public Result selectWeeklyByCode(@PathVariable String code) {
+        return searchService.selectWeeklyByCode(code);
+    }
+
+    @GetMapping("/stock/monthly/{code}")
+    public Result selectMonthByCode(@PathVariable String code) {
+        return searchService.selectMonthlyByCode(code);
     }
 }

@@ -42,4 +42,8 @@ public interface SearchMapper {
     Double getProfitById(String code);
 
     Double getProfitRateById(String code);
+
+    List<Weekly> selectWeeklyByCode(String code);
+
+    List<Monthly> selectMonthlyByCode(String code);
 }
