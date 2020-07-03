@@ -4,6 +4,7 @@ spring:
     username: root
     password:
     driver-class-name: com.mysql.jdbc.Driver
+
   thymeleaf:
     prefix: classpath:templates/
     suffix: .html
