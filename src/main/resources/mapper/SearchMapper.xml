@@ -97,4 +97,8 @@
         select * from monthly where ts_code = #{code};
     </select>
 
+    <select id="selectIndexDailyByCodeBetweenDate" resultMap="com.ztx.shares.mapper.CommonMapper.IndexDaily">
+        select * from index_daily where ts_code = #{code} and trade_date >= #{startDay} and trade_date &lt;= #{endDay};
+    </select>
+
 </mapper>

@@ -168,4 +168,9 @@ public class SearchController {
     public Result selectMonthByCode(@PathVariable String code) {
         return searchService.selectMonthlyByCode(code);
     }
+
+    @GetMapping("/indexDaily/between3")
+    public Result selectIndexDailyByCodeBetweenDate(@RequestParam("code") String code, @RequestParam("startDay") String startDay, @RequestParam("endDay") String endDay) {
+        return searchService.selectIndexDailyByCodeBetweenDate(code, startDay, endDay);
+    }
 }

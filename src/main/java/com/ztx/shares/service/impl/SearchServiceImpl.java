@@ -128,4 +128,11 @@ public class SearchServiceImpl implements SearchService {
         Result result = new Result(true, monthly);
         return result;
     }
+
+    @Override
+    public Result selectIndexDailyByCodeBetweenDate(String code, String startDay, String endDay) {
+        List<IndexDaily> indexDailyList = searchMapper.selectIndexDailyByCodeBetweenDate(code, startDay, endDay);
+        Result result = new Result(true, indexDailyList);
+        return result;
+    }
 }

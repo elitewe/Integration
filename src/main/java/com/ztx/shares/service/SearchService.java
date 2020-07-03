@@ -36,4 +36,6 @@ public interface SearchService {
     Result selectWeeklyByCode(String code);
 
     Result selectMonthlyByCode(String code);
+
+    Result selectIndexDailyByCodeBetweenDate(String code, String startDay, String endDay);
 }

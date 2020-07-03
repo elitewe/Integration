@@ -46,4 +46,6 @@ public interface SearchMapper {
     List<Weekly> selectWeeklyByCode(String code);
 
     List<Monthly> selectMonthlyByCode(String code);
+
+    List<IndexDaily> selectIndexDailyByCodeBetweenDate(String code, String startDay, String endDay);
 }
